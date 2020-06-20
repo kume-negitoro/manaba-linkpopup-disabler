@@ -1,0 +1,20 @@
+{
+    "name": "manaba-linkballoon-disabler",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "An chrome extension to disable link popup balloon",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://manaba.fun.ac.jp/**/*"
+            ],
+            "run_at": "document_end",
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        "patch.js"
+    ]
+}
